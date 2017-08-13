@@ -23,7 +23,7 @@ public class SessionWatch {
     public static void main(String[] args) throws IOException, InterruptedException {
         ZooKeeper zookeeper = new ZooKeeper("localhost:2181", 2000, new Watcher() {
 
-            @Override
+
             public void process(WatchedEvent event) {
                 System.out.println("Event is " + event);
             }

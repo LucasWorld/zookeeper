@@ -38,7 +38,7 @@ public class Master implements Watcher, Runnable {
         this.serverId = serverId;
     }
 
-    @Override
+
     public void process(WatchedEvent event) {
         System.out.println(event);
     }
